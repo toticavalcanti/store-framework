@@ -3,7 +3,8 @@
     "children": [
       "breadcrumb",
       "flex-layout.row#main",
-      "product-price"
+      "product-price",
+      "product-identifier.product"
     ]
   },
 
@@ -45,7 +46,6 @@
     "children": [
       "sku-selector",
       "product-quantity"
-     
     ]
   },
 
