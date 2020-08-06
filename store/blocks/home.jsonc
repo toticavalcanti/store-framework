@@ -1,21 +1,21 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "info-card#button-right",
       "info-card#button-left",
-      "flex-layout.row",
-      "flex-layout.col",
-      "shelf",
       "slider-layout#home",
-      "responsive-layout",
-      "responsive-layout.desktop#desktop", 
-      "responsive-layout.mobile#mobile",
-      "product-images",
-      "product-price",
-      "product-name"
+      "shelf",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
-  },
 
+  },
+  "rich-text": {
+    "props": {
+      "text": "**Hello, World!**",
+      "textPosition": "RIGHT"
+    }
+  },
   "info-card#button-right": {
     "props": {
       "isFullModeStyle": false,
@@ -30,7 +30,6 @@
       "blockClass": "vintage"
     }
   },
-
   "info-card#button-left": {
     "props": {
       "isFullModeStyle": false,
@@ -46,14 +45,22 @@
     }
   },
 
+
   "flex-layout.row":{
     "children": [
-      "info-card#rethink",
+      "info-card",
       "flex-layout.col"
     ]
   },
+
+  "flex-layout.col":{
+    "children": [
+      "image#electronics",
+      "image#major-appliance"
+    ]
+  },
   
-  "info-card#rethink": {
+ "info-card#rethink": {
     "props": {
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
       "isFullModeStyle": true,
@@ -62,19 +69,12 @@
       "textPosition": "center"
     }
   },
-
-  "rich-text#delete": {
+  
+  "rich-text#deletar": {
     "props": {
       "text": "I'll be deleted soon"
     }
   },
-
-  "flex-layout.col": {
-    "children": [
-      "image#electronics",
-      "image#major-appliance"
-    ]
-  }, 
 
   "image#electronics": {
     "props": {
@@ -88,15 +88,18 @@
       "maxWidth": "100%"
     }
   },
-  
-  "responsive-layout.desktop#desktop": {
-    "children": ["rich-text#desktop", "image#desktop"]
-  },
 
+
+  // responsiveimage
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop","image#desktop"]
+    
+  },
+  
   "responsive-layout.mobile#mobile": {
     "children": ["rich-text#mobile", "image#mobile"]
   },
-
+  
   "rich-text#desktop": {
     "props": {
       "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
@@ -104,7 +107,7 @@
       "textAlignment": "CENTER"
     }
   },
-
+  
   "rich-text#mobile": {
     "props": {
       "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
@@ -119,7 +122,7 @@
       "maxWidth": "100%",
       "link": {
         "url": "/small-appliances/coffee-makers"
-      } ,
+      },
       "alt": "Coffee Makers Collection"
     }
   },
@@ -130,7 +133,7 @@
       "maxWidth": "100%",
       "link": {
         "url": "/small-appliances/coffee-makers"
-      } ,
+      },
       "alt": "Coffee Makers Collection"
     }
   }
