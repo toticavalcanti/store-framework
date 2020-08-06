@@ -2,6 +2,7 @@
   "store.product": {
     "children": [
       "breadcrumb",
+      "flex-layout.row",
       "flex-layout.row#main",
       "product-price"
     ]
