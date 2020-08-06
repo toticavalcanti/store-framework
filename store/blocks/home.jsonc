@@ -4,7 +4,8 @@
       "info-card#button-right",
       "info-card#button-left",
       "flex-layout.row",
-      "flex-layout.col"
+      "flex-layout.col",
+      "shelf"
     ]
   },
   "info-card#button-right": {
@@ -51,7 +52,6 @@
       "textPosition": "center"
     }
   },
-  
   "rich-text#delete": {
     "props": {
       "text": "I'll be deleted soon"
@@ -74,5 +74,5 @@
       "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
       "maxWidth": "100%"
     }
-  } 
+  }
 }
