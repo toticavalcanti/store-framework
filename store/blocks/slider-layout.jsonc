@@ -11,7 +11,7 @@
     "props": {
       "autoplay": {
         "timeout": 7000,
-        "stopOnHover": false
+        "stopOnHover": true
       }
     }
   },
@@ -19,40 +19,37 @@
   "image#brand1": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square1.png",
-      "description": "something something"
+      "description": "logo 01"
     }
   },
   "image#brand2": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square2.png",
-      "description": "something something"
+      "description": "logo 02"
     }
   },
   "image#brand3": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square3.png",
-      "description": "something something"
+      "description": "logo 03"
     }
   },
   "image#brand4": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square4.png",
-      "isFullModeStyle": true,
-      "headline": "Black Friday",
-      "callToActionText": "Subscribe",
-      "textPosition": "center"
+      "description": "logo 04"
     }
   },
   "image#brand5": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square5.png",
-      "description": "something something"
+      "description": "logo 05"
     }
   },
   "image#brand6": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png",
-      "description": "something something"
+      "description": "logo 06"
     }
   }
 }
