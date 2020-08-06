@@ -17,6 +17,13 @@
 
     ]
   },
+  
+  "flex-layout.row": {
+    "children": [
+      "sku-selector",
+      "product-quantity"
+    ]
+  },
 
   "flex-layout.col#left": {
     "children": [
@@ -29,6 +36,7 @@
       "preventVerticalStretch": true,
       "verticalAlign": "middle"
     },
+    
     "children": [
       "product-images",
       "product-name", 
