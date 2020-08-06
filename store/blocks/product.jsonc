@@ -3,7 +3,9 @@
     "children": [
       "breadcrumb",
       "flex-layout.row#main",
-      "product-price"
+      "product-price",
+      "flex-layout.row"
+    
     ]
   },
 
@@ -13,15 +15,10 @@
     },
     "children": [
       "flex-layout.col#left",
-      "flex-layout.col#right"
-
-    ]
-  },
-  
-  "flex-layout.row": {
-    "children": [
+      "flex-layout.col#right",
       "sku-selector",
       "product-quantity"
+
     ]
   },
 
