@@ -6,7 +6,9 @@
       "flex-layout.row",
       "flex-layout.col",
       "shelf",
-      "slider-layout#home"
+      "slider-layout#home",
+      "responsive-layout.desktop#desktop", 
+      "responsive-layout.mobile#mobile"
     ]
   },
   "info-card#button-right": {
