@@ -3,7 +3,8 @@
     "children": [
       "breadcrumb",
       "flex-layout.row#main",
-      "product-price"
+      "product-price",
+      "product-identifier.product"
     ]
   },
 
@@ -32,7 +33,6 @@
     "children": [
       "product-images",
       "product-name", 
-      "product-identifier.product",
       "product-price",
       "flex-layout.row#qty-sku",  
       "buy-button"
