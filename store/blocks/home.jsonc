@@ -9,7 +9,10 @@
       "slider-layout#home",
       "responsive-layout",
       "responsive-layout.desktop#desktop", 
-      "responsive-layout.mobile#mobile"
+      "responsive-layout.mobile#mobile",
+      "product-images",
+      "product-price",
+      "product-name"
     ]
   },
 
