@@ -4,7 +4,6 @@
       "info-card#button-right",
       "info-card#button-left",
       "flex-layout.row"
-
     ]
   },
   "info-card#button-right": {
