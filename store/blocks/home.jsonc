@@ -37,8 +37,8 @@
   },
   "flex-layout.col": {
     "children": [
-      "info-card#rethink",
-      "flex-layout.col#delete"
+      "image#electronics",
+      "image#major-appliance"
     ]
   }, 
   "info-card#rethink": {
