@@ -1,13 +1,14 @@
+// 20200806182816
+// https://raw.githubusercontent.com/jpesce/store-framework/pdp3/store/blocks/product.jsonc
+
 {
   "store.product": {
     "children": [
       "breadcrumb",
-      "flex-layout.row",
       "flex-layout.row#main",
-      "product-price"
+      "shelf.relatedProducts"
     ]
   },
-
   "flex-layout.row#main": {
     "props": {
       "marginTop": 6
@@ -19,8 +20,20 @@
   },
   "flex-layout.col#left": {
     "children": [
-      "product-images"
+      "stack-layout#brand"
     ]
+  },
+  "stack-layout#brand": {
+    "children": [
+      "product-images",
+      "product-brand"
+    ]
+  },
+  "product-brand": {
+    "props": {
+      "height": "30",
+      "displayMode": "logo"
+    }
   },
   "flex-layout.col#right": {
     "children": [
@@ -30,7 +43,7 @@
       "flex-layout.row#qty-sku",
       "buy-button"
     ],
-    "props" : {
+    "props": {
       "verticalAlign": "middle",
       "preventVerticalStretch": true
     }
@@ -41,6 +54,15 @@
       "product-quantity",
       "shipping-simulator"
     ]
+  },
+  "sku-selector": {
+    "props": {
+      "initialSelection": "empty",
+      "showVariationsLabels": "true",
+      "showValueForVariation": "all",
+      "showVariationsErrorMessage": "true",
+      "showValueNameForImageVariation": "true"
+    }
   },
   "product-price": {
     "props": {
