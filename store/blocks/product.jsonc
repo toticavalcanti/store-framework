@@ -1,125 +1,70 @@
 {
-  "store.home": {
-    "blocks": [
-      "info-card#button-right",
-      "info-card#button-left",
-      "flex-layout.row",
-      "flex-layout.col",
-      "shelf",
-      "slider-layout#home",
-      "responsive-layout",
-      "responsive-layout.desktop#desktop",
-      "responsive-layout.mobile#mobile",
+  "store.product": {
+    "children": [
+      "breadcrumb",
+      "flex-layout.row#main",
+      "shelf.relatedProducts"
+    ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "stack-layout#brand"
+    ]
+  },
+  "stack-layout#brand": {
+    "children": [
       "product-images",
+      "product-brand"
+    ]
+  },
+  "product-brand": {
+    "props": {
+      "height": "30",
+      "displayMode": "logo"
+    }
+  },
+  "flex-layout.col#right": {
+    "children": [
+      "product-name",
+      "product-identifier.product",
       "product-price",
-      "product-name"
-    ]
-  },
-  "info-card#button-right": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
-      "blockClass": "vintage"
+      "flex-layout.row#qty-sku",
+      "buy-button"
+    ],
+    "props" : {
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
     }
   },
-  "info-card#button-left": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-      "callToActionMode": "link",
-      "callToActionText": "Go to Collection",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
-      "blockClass": "metal"
-    }
-  },
-  "flex-layout.row": {
+  "flex-layout.row#qty-sku": {
     "children": [
-      "info-card#rethink",
-      "flex-layout.col"
+      "sku-selector",
+      "product-quantity",
+      "shipping-simulator"
     ]
   },
-  "info-card#rethink": {
+  "sku-selector": {
     "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
+      "initialSelection": "empty",
+      "showVariationsLabels": "true",
+      "showValueForVariation": "all",
+      "showVariationsErrorMessage": "true",
+      "showValueNameForImageVariation": "true"
     }
   },
-  "flex-layout.col": {
-    "children": [
-      "image#electronics",
-      "image#major-appliance"
-    ]
-  },
-  "image#electronics": {
+  "product-price": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
-      "maxWidth": "100%"
-    }
-  },
-  "image#major-appliance": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-      "maxWidth": "100%"
-    }
-  },
-  "responsive-layout.desktop#desktop": {
-    "children": [
-      "rich-text#desktop",
-      "image#desktop"
-    ]
-  },
-  "responsive-layout.mobile#mobile": {
-    "children": [
-      "rich-text#mobile",
-      "image#mobile"
-    ]
-  },
-  "rich-text#desktop": {
-    "props": {
-      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
-  "rich-text#mobile": {
-    "props": {
-      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
-  "image#desktop": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
-      "maxWidth": "100%",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      },
-      "alt": "Coffee Makers Collection"
-    }
-  },
-  "image#mobile": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
-      "maxWidth": "100%",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      },
-      "alt": "Coffee Makers Collection"
+      "showSavings": true,
+      "showListPrice": true
     }
   }
 }
