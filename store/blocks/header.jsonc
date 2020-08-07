@@ -82,10 +82,10 @@
 
   "logo": {
       "props": {
-          "url": "https://www.usereserva.com/ccstore/v1/images/?source=/file/general/reserva-carrossel-desk-classicos-piano2.jpg&width=1280&height=433"
+          "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
       }
   },
-
+  
   "rich-text#header": {
       "props": {
           "text": "**Free Shipping on orders over $50**",
