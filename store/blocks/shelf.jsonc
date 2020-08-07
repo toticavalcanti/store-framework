@@ -1,9 +1,8 @@
-  
 {
   "shelf": {
     "blocks": ["product-summary.shelf"],
     "props": {
-      "category": 1,
+      "category": "1",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "desktopOnly",
       "productList": {

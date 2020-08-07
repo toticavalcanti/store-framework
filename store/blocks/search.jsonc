@@ -3,11 +3,9 @@
     "blocks": ["search-result-layout"]
   },
   "search-result-layout": {
-     "blocks": [
-        "search-result-layout.desktop",
-        "search-result-layout.mobile",
-        "search-not-found-layout"
-     ]
+    "blocks": [
+      "search-result-layout.desktop"
+    ]
   },
   "search-result-layout.desktop": {
     "children": [
@@ -17,7 +15,10 @@
       "search-fetch-previous",
       "flex-layout.row#results",
       "search-fetch-more"
-    ]
+    ],
+    "props": {
+      "pagination": "show-more"
+    }
   },
   "flex-layout.row#top": {
     "children": [
@@ -32,7 +33,7 @@
     ]
   },
   "flex-layout.col#filter": {
-    "props" : {
+    "props": {
       "width": "20%"
     },
     "children": [
