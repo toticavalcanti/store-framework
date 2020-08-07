@@ -9,11 +9,13 @@
       "orientation": "horizontal"
     }
   },
+  
   "vtex.menu@2.x:submenu#major": {
     "children":[
       "vtex.menu@2.x:menu#major"
     ]
   },
+
   "vtex.menu@2.x:menu#major": {
     "children": [
       "menu-item#refrigerators",
@@ -24,11 +26,13 @@
       "orientation": "vertical"
     }
   },
+
   "vtex.menu@2.x:submenu#small":{
     "children":[
       "vtex.menu@2.x:menu#small"
     ]
   },
+
   "vtex.menu@2.x:menu#small": {
     "children": [
       "menu-item#mixers",
@@ -39,11 +43,13 @@
       "orientation": "vertical"
     }
   },
+
   "vtex.menu@2.x:submenu#electronics":{
     "children":[
       "vtex.menu@2.x:menu#electronics"
     ]
   },
+
   "vtex.menu@2.x:menu#electronics": {
     "children": [
       "menu-item#cameras",
