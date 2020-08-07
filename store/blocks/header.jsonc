@@ -1,0 +1,95 @@
+{
+  "header": {
+      "blocks": [
+          "header-layout.desktop",
+          "header-layout.mobile"
+      ]
+  },
+
+  "header.full": {
+      "blocks": [
+          "header-layout.desktop",
+          "header-layout.mobile"
+      ]
+  },
+
+  "header-layout.desktop": {
+      "children": [
+          "header-row#notification",
+          "header-row#main"
+      ]
+  },
+
+  "header-layout.mobile": {
+      "children": [
+          "header-row#notification",
+          "header-row#main-mobile",
+          "header-row#search"
+      ]
+  },
+
+  "header-row#main": {
+      "props": {
+          "inverted": true,
+          "sticky": true,
+          "fullWidth": false
+      },      
+      "children": [
+          "logo",
+          "header-spacer",
+          "search-bar",
+          "minicart",
+          "login"
+      ]
+  },
+
+  "header-row#notification": {
+      "children": [
+          "header-spacer",
+          "rich-text#header",
+          "header-spacer"
+      ]
+  },
+
+  "header-row#main-mobile": {
+      "children": [
+          "logo",
+          "header-spacer",
+          "minicart",
+          "login"
+      ],
+      "props": {
+          "sticky": true,
+          "inverted": true
+      }
+  },
+
+  "header-row#search": {
+      "children": [
+          "search-bar"
+      ],
+      "props": {
+          "sticky": true
+      }
+  },
+
+  "login": {
+      "props": {
+          "showIconProfile": true,
+          "iconLabel": "Login"
+      }
+  },
+
+  "logo": {
+      "props": {
+          "url": "https://www.usereserva.com/ccstore/v1/images/?source=/file/general/reserva-carrossel-desk-classicos-piano2.jpg&width=1280&height=433"
+      }
+  },
+
+  "rich-text#header": {
+      "props": {
+          "text": "**Free Shipping on orders over $50**",
+          "textPosition": "CENTER"
+      }
+  }
+}
