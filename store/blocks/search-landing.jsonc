@@ -7,7 +7,8 @@
   },  
   "image#landingbanner": {
     "props": {
-      "minWidth": "100%"      
+      "minWidth": "100%",
+      "src": "https://www.usereserva.com/ccstore/v1/images/?source=/file/collections/oficina-desk-categoria-roupas.jpg&height=483&width=1912"
     }
   },
   "search-result-layout.customQuery": {
